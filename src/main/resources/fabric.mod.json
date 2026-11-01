@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "introvideo",
+  "version": "${version}",
+  "name": "Intro Video",
+  "description": "Replaces the Mojang loading screen with a video (PNG frames) from config/introvideo/frames.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "introvideo.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
